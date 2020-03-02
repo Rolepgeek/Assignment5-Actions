@@ -10,7 +10,7 @@ def circlerun(rad):
 
 
 def listrun(deck):
-    newlist = [,]
+    newlist = [0, 0]
     newlist[0] = deck[0]
     newlist[1] = deck[len(deck)-1]
     return newlist

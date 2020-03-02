@@ -21,8 +21,8 @@ class CircleCase(unittest.TestCase):
 
 class ListCase(unittest.TestCase):
     def test1(self):
-        expected = [1,4]
-        self.assertEqual(expected, task.listrun([1,2,3,4]))
+        expected = [1, 4]
+        self.assertEqual(expected, task.listrun([1, 2, 3, 4]))
 
 
 if __name__ == '__main__':
