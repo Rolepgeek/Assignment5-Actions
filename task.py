@@ -50,7 +50,7 @@ def daterun(date1,date2):
             monthdays2 += leap_list[n]
     yearday2 = date2.day + monthdays2
     leapdays = 0
-    for n in range(date1.year, date2,year):
+    for n in range(date1.year, date2.year):
         if n % 4 == 0:
             if n % 100 == 0:
                 if n % 400 == 0:
