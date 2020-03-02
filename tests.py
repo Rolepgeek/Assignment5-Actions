@@ -25,6 +25,7 @@ class ListCase(unittest.TestCase):
         expected = [1, 4]
         self.assertEqual(expected, task.listrun([1, 2, 3, 4]))
 
+
 class DateCase(unittest.TestCase):
     def test1(self):
         date1 = datetime.date(2020, 5, 19)
