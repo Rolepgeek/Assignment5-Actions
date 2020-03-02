@@ -21,11 +21,9 @@ def daterun(date1, date2):
     yearday2 = date2.day + monthcalc(date2)
     leapdays = 0
     for n in range(date1.year, date2.year):
-        if n % 4 == 0:
-            if n % 100 == 0:
-                if n % 400 == 0:
-                    leapdays += 1
-                continue
+        if n % 400 == 0:
+            leapdays += 1
+        elif n % 4 == 0 and n % 100 != 0:
             leapdays += 1
     totaldays = yearday2 - yearday1 + (date2.year - date1.year)*365 + leapdays
     return abs(totaldays)
